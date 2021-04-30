@@ -18,15 +18,10 @@
     <div class="container">
        <h2>Window unit calculator</h2>
        <div class="input">
-        <form action="" class="input" id="input">
-            <label for="width">Width in mm:</label><br>
-            <input type="number" class="width"><br>
+            <label>Width in mm:</label><br>
+            <input type="number" onKeyUp="calcFrame()" onClick="calcFrame()" class="input" id="width"><br>
             <label for="height">Height in mm:</label><br>
-            <input type="number" class="height"><br>
-            <div class="btn-container">
-                <button class="btn btn-hero" type="button" onclick="getInputValue();">Submit</button>
-            </div>
-        </form>
+            <input type="number" onKeyUp="calcFrame()" onClick="calcFrame()" class="input" id="height"><br>
         </div>
         <div class="results">
             <p>
