@@ -5,7 +5,7 @@
   
     <!-- styles -->
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    
     <meta charset="UTF-8">
     <title>Windows unit calculator</title>
 </head>
@@ -19,15 +19,19 @@
        <h2>Window unit calculator</h2>
        <div class="input">
             <label>Width in mm:</label><br>
-            <input type="number" onKeyUp="calcFrame()" onClick="calcFrame()" class="input" id="width"><br>
+            <input type="number" class="input" id="width"><br>
             <label for="height">Height in mm:</label><br>
-            <input type="number" onKeyUp="calcFrame()" onClick="calcFrame()" class="input" id="height"><br>
+            <input type="number" class="input" id="height"><br>
+        </div>
+        <div class="btn">
+            <button class="btn btn-hero">click me</button>
         </div>
         <div class="results">
-            <p>
+            <p id="=results">
                 
             </p>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
