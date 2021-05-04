@@ -232,3 +232,7 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+.input {
+    border-radius: 10;
+    font-size: 24;
+}
