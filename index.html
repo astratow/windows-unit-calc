@@ -5,6 +5,7 @@
   
     <!-- styles -->
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
     
     <meta charset="UTF-8">
     <title>Windows unit calculator</title>
@@ -18,20 +19,21 @@
     <div class="container">
        <h2>Window unit calculator</h2>
        <div class="input">
-            <label for="width">Width in mm:</label><br>
-            <input type="text" min=0 class="spacerSize" id="width"><br/>
-            <label for="height">Height in mm:</label><br>
-            <input type="text" min=0 class="spacerSize" id="height"><br/>
+           <form>
+            	<label>Width in mm:</label><br>
+            	<input type="number" min=0 class="spacerSize" id="width" /><br/>
+            	<label>Height in mm:</label><br>
+            	<input type="number" min=0 class="spacerSize" id="height" /><br/>
+            </form>
         </div>
         <div class="btn">
-            <button class="btn btn-hero">click me</button>
+            <button class="btn btn-hero" onclick="showResults()">click me</button>
         </div>
-        <div class="results">
-            <p id="=results">
-                
+        <div class="results" >
+            <p>
+                Result: <input type="text" id="results" value="0" placeholder="this is a result..." readonly>
             </p>
         </div>
     </div>
-    <script src="app.js"></script>
 </body>
 </html>
