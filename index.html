@@ -21,13 +21,13 @@
        <div class="input">
            <form>
             	<label>Width in mm:</label><br>
-            	<input type="number" min=0 class="spacerSize" id="width" /><br/>
+            	<input type="number" min=0 class="spacerSize" id="width" onkeyup="mult(this.width);"><br/>
             	<label>Height in mm:</label><br>
-            	<input type="number" min=0 class="spacerSize" id="height" /><br/>
+            	<input type="number" min=0 class="spacerSize" id="height" onkeyup="mult(this.height);"><br/>
             </form>
         </div>
         <div class="btn">
-            <button class="btn btn-hero" onclick="showResults()">click me</button>
+            <button class="btn btn-hero" onclick="mult(this.width);">click me</button>
         </div>
         <div class="results" >
             <p>

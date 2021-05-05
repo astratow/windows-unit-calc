@@ -1,3 +1,12 @@
+/*app.js*/
+function mult(width, height) {
+	var horizontalBar = width - 27;
+//	x = 2 * value;
+//	y = 3 * value;
+
+	document.getElementById('results').value = horizontalBar;
+//	document.getElementById('out3x').value = y;
+}
 //const elem = id => document.getElementById(id);
 //const btn = document.getElementById('btn');
 //var width =  document.getElementById("width").value;
