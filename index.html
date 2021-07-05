@@ -5,7 +5,7 @@
   
     <!-- styles -->
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    <script type="text/javascript" src="app.js" defer></script>
     
     <meta charset="UTF-8">
     <title>Windows unit calculator</title>
@@ -20,14 +20,19 @@
        <h2>Window unit calculator</h2>
        <div class="input">
            <form>
+           		<label for="bar-size">Bar size:</label><br>
+           		<select name="bar-size" id="bar-size" onChange="this.value">
+           			<option value="18">18mm</option>
+           			<option value="25">25mm</option>
+           		</select><br>
             	<label>Width in mm:</label><br>
-            	<input type="number" min=0 class="spacerSize" id="width" onkeyup="mult(this.width);"><br/>
+            	<input type="number" min=0 class="spacerSize" id="width" ><br/>
             	<label>Height in mm:</label><br>
-            	<input type="number" min=0 class="spacerSize" id="height" onkeyup="mult(this.height);"><br/>
+            	<input type="number" min=0 class="spacerSize" id="height" onkeyup="showResults();"><br/>
             </form>
         </div>
         <div class="btn">
-            <button class="btn btn-hero" onclick="mult(this.width);">click me</button>
+            <button class="btn btn-hero" onclick="alert(barSize);">click me</button>
         </div>
         <div class="results" >
             <p>
@@ -35,5 +40,6 @@
             </p>
         </div>
     </div>
+
 </body>
 </html>
