@@ -1,8 +1,13 @@
 /*app.js*/
+function barSizeSelect() { 
+	var barSize = document.getElementById("bar-size").value; 
+	return barSize;
+	console.log(barSize);
+	} 
 
-barSize = document.querySelector("#bar-size option:checked").value;
+
 //barSize= barSizeSelect.options[barSizeSelect.selectedIndex].value;
-console.log(barSize);
+
 /*function mult(value) {
 	var horizontalBar = value - 27;
 	x = 2 * value;
