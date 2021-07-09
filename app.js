@@ -1,10 +1,25 @@
 /*app.js*/
+/* takes bar size from drop down menu */
 function barSizeSelect() { 
 	var barSize = document.getElementById("bar-size").value; 
 	return barSize;
 	console.log(barSize);
 	} 
 
+/* Takes horizontal window size and returns bar length*/
+function barLengthWidth() {
+	var barLengthWidth = document.getElementById("width").value;
+//	barLengthWidth = barLengthWidth - 
+	return barLengthWidth;
+	console.log(barLengthWidth);
+}
+
+/* Takes Vertical widnow size and returns bar length*/
+function barLengthHeight() {
+	var barLengthHeight = document.getElementById("height").value;
+	return barLengthheigh;
+	console.log(barLengthWidth);
+}
 
 //barSize= barSizeSelect.options[barSizeSelect.selectedIndex].value;
 
