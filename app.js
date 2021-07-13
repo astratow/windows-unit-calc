@@ -18,8 +18,8 @@ function barLengthWidth() {
 /* Takes Vertical widnow size and returns bar length*/
 function barLengthHeight() {
 	var barLengthHeight = document.getElementById("height").value;
-	console.log(barLengthWidth);	
-	return barLengthheigh;
+	console.log(barLengthHeight);	
+	return barLengthHeight;
 	
 }
 
