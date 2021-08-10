@@ -26,13 +26,13 @@
            			<option value="25">25mm</option>
            		</select><br>
             	<label>Width in mm:</label><br>
-            	<input type="number" min=0 class="spacerSize" id="width" onkeyup="barLengthWidth();"><br/>
+            	<input type="number" min=0 class="spacerSize" id="width" onkeyup="barWidth();"><br/>
             	<label>Height in mm:</label><br>
-            	<input type="number" min=0 class="spacerSize" id="height" onkeyup="barLengthHeight();"><br/>
+            	<input type="number" min=0 class="spacerSize" id="height" onkeyup="barHeight();"><br/>
             </form>
         </div>
         <div class="btn">
-            <button class="btn btn-hero" onclick="alert(barLengthWidth());">click me</button>
+            <button class="btn btn-hero" onclick="alert(barToCutSingle());">click me</button>
         </div>
         <div class="results" >
             <p>

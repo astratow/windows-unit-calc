@@ -7,20 +7,30 @@ function barSizeSelect() {
 }
 
 
-/* Takes horizontal window size and returns bar length*/
-function barLengthWidth() {
-	var barLengthWidth = document.getElementById("width").value;
-//	barLengthWidth = barLengthWidth - 
-	console.log(barLengthWidth);
-	return barLengthWidth;	
+/* Takes horizontal window size and returns bar */
+function barWidth() {
+	var barWidth = document.getElementById("width").value;
+//	barWidth = barWidth - 
+	console.log(barWidth);
+	return barWidth;	
 }
 
-/* Takes Vertical widnow size and returns bar length*/
-function barLengthHeight() {
-	var barLengthHeight = document.getElementById("height").value;
-	console.log(barLengthHeight);	
-	return barLengthHeight;
+/* Takes Vertical widnow size and returns bar */
+function barHeight() {
+	var barHeight = document.getElementById("height").value;
+	console.log(barHeight);	
+	return barHeight;
 	
+}
+/**/
+function barToCutSingle() {
+	var barToCutSize = 0;
+	if (barWidth() - barHeight() < 0){
+		barToCutSize = barWidth() - 24;
+	} else {
+		barToCutSize = barHeight() - 24;
+	}
+	return barToCutSize;
 }
 
 //barSize= barSizeSelect.options[barSizeSelect.selectedIndex].value;
