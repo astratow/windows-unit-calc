@@ -20,9 +20,8 @@ function barHeight() {
 	var barHeight = document.getElementById("height").value;
 	console.log(barHeight);	
 	return barHeight;
-	
 }
-/**/
+/* Work out size of the bar for single horizontal or vertical */
 function barToCutSingle() {
 	var barToCutSize = 0;
 	if (barWidth() - barHeight() < 0){
@@ -32,7 +31,11 @@ function barToCutSingle() {
 	}
 	return barToCutSize;
 }
-
+/**/
+function displaySingleBar() {
+	console.log('hello');
+	document.getElementById("results").innerHTML = 'hello';
+}
 //barSize= barSizeSelect.options[barSizeSelect.selectedIndex].value;
 
 /*function mult(value) {
