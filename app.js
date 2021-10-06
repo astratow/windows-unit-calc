@@ -1,7 +1,7 @@
 /*app.js*/
 /* takes bar size from drop down menu */
 function barSizeSelect() { 
-	var barSize = document.getElementById("bar-size").value;
+	var barSize = parseFloat(document.getElementById("bar-size").value);
 	console.log(barSize);
 	return barSize;
 }
@@ -9,7 +9,7 @@ function barSizeSelect() {
 
 /* Takes horizontal window size and returns bar */
 function barWidth() {
-	var barWidth = document.getElementById("width").value;
+	var barWidth = parseFloat(document.getElementById("width").value);
 //	barWidth = barWidth - 
 	console.log(barWidth);
 	return barWidth;	
@@ -17,7 +17,7 @@ function barWidth() {
 
 /* Takes Vertical widnow size and returns bar */
 function barHeight() {
-	var barHeight = document.getElementById("height").value;
+	var barHeight = parseFloat(document.getElementById("height").value);
 	console.log(barHeight);	
 	return barHeight;
 }
@@ -34,7 +34,7 @@ function barToCutSingle() {
 /**/
 function displaySingleBar() {
 	console.log('hello');
-	document.getElementById("results").innerHTML = 'hello';
+	document.getElementById("results").innerHTML = barToCutSingle();
 }
 //barSize= barSizeSelect.options[barSizeSelect.selectedIndex].value;
 
