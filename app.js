@@ -1,7 +1,7 @@
 /*app.js*/
 /* takes bar size from drop down menu */
 function barSizeSelect() { 
-	var barSize = parseFloat(document.getElementById("bar-size").value);
+	let barSize = parseFloat(document.getElementById("bar-size").value);
 	console.log(barSize);
 	return barSize;
 }
@@ -9,7 +9,7 @@ function barSizeSelect() {
 
 /* Takes horizontal window size and returns bar */
 function barWidth() {
-	var barWidth = parseFloat(document.getElementById("width").value);
+	let barWidth = parseFloat(document.getElementById("width").value);
 //	barWidth = barWidth - 
 	console.log(barWidth);
 	return barWidth;	
@@ -17,13 +17,13 @@ function barWidth() {
 
 /* Takes Vertical widnow size and returns bar */
 function barHeight() {
-	var barHeight = parseFloat(document.getElementById("height").value);
+	let barHeight = parseFloat(document.getElementById("height").value);
 	console.log(barHeight);	
 	return barHeight;
 }
 /* Work out size of the bar for single horizontal or vertical */
 function barToCutSingle() {
-	var barToCutSize = 0;
+	let barToCutSize = 0;
 	if (barWidth() - barHeight() < 0){
 		barToCutSize = barWidth() - 24;
 	} else {
@@ -34,7 +34,7 @@ function barToCutSingle() {
 /**/
 function displaySingleBar() {
 	console.log('hello');
-	document.getElementById("results").innerHTML = barToCutSingle();
+	document.getElementById("results").innerHTML = "Vertical bar: " + barToCutSingle();
 }
 //barSize= barSizeSelect.options[barSizeSelect.selectedIndex].value;
 
